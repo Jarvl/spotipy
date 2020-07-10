@@ -438,7 +438,7 @@ class SpotifyOAuth(SpotifyAuthBase):
             return self.parse_response_code(response)
         return self.get_auth_response()
 
-    def get_access_token(self, code=None, as_dict=True, check_cache=True):
+    def get_access_token(self, code=None, as_dict=True, check_cache=False):
         """ Gets the access token for the app given the code
 
             Parameters:
